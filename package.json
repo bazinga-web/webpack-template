@@ -5,9 +5,13 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "dev": "webpack --config build/webpack.dev.js",
     "start": "webpack-dev-server --config build/webpack.dev.js",
     "build": "webpack --config build/webpack.prod.js"
   },
+  "sideEffects": [
+    "*.css"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",

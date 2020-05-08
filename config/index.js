@@ -7,7 +7,9 @@ const assetsPath = function (_path) {
 
 module.exports = {
     dev: {
+        assetsRoot: path.resolve(__dirname, '../dist'),
         devtool: 'cheap-eval-source-map',
+        assetsPath,
     },
     prod: {
         assetsRoot: path.resolve(__dirname, '../dist'),

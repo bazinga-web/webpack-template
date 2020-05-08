@@ -7,6 +7,11 @@ const { resolve } = require('./utils');
 
 module.exports = merge(common, {
     mode: 'development',
+    output: {
+        path: config.dev.assetsRoot,
+        filename: config.dev.assetsPath('js/[name].[chunkhash:8].js'),
+        chunkFilename: config.dev.assetsPath('js/[name].[chunkhash:8].js')
+    },
     devtool: config.dev.devtool,
     devServer: {
         contentBase: path.resolve(__dirname, 'dist'),
