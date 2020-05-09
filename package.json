@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "webpack --config build/webpack.dev.js",
-    "start": "webpack-dev-server --config build/webpack.dev.js",
+    "start": "webpack-dev-server --config build/webpack.dev.js --hot",
     "build": "webpack --config build/webpack.prod.js"
   },
   "sideEffects": [

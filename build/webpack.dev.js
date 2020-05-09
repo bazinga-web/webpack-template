@@ -9,8 +9,8 @@ module.exports = merge(common, {
     mode: 'development',
     output: {
         path: config.dev.assetsRoot,
-        filename: config.dev.assetsPath('js/[name].[chunkhash:8].js'),
-        chunkFilename: config.dev.assetsPath('js/[name].[chunkhash:8].js')
+        filename: config.dev.assetsPath('js/[name].[hash].js'),
+        chunkFilename: config.dev.assetsPath('js/[name].[hash].js')
     },
     devtool: config.dev.devtool,
     devServer: {

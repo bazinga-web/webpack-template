@@ -20,7 +20,7 @@ module.exports = merge(common, {
         // 值 "single" 会创建一个在所有生成 chunk 之间共享的运行时文件。此设置是如下设置的别名：runtimeChunk: { name: 'runtime'}
         runtimeChunk: 'single', // 提取引导模板
         splitChunks: {
-            // chunks: 'all'
+            // chunks: 'all' // all -- 同步和异步都拆分 async --异步导入拆分
             cacheGroups: {
                 vendor: {
                     test: /[\\/]node_modules[\\/]/, // 提取第三方库

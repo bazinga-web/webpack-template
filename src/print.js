@@ -1,3 +1,3 @@
-export default function () {
-    console.log('print!!');
-}
+var num = 3
+console.log(num)
+export default num
