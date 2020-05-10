@@ -1,31 +1,32 @@
 // import { file, parse } from './globals'
 // import pic from './assets/img/download.png'
 // import './assets/css/style.css'
-import print from './print.js'
+import "@babel/polyfill";
+// import print from './print.js'
 // import { sum } from './math';
 
-function component() {
-    let element = document.createElement('div');
-    // element.innerHTML = _.join(['hello', 'webpack', '123'], ' ');
-    // element.innerHTML = _.join(['hello', 'webpack'], ' ');
-    element.innerHTML = print;
-    // let img = document.createElement('img');
-    // img.src = pic;
+// function component() {
+//     let element = document.createElement('div');
+//     // element.innerHTML = _.join(['hello', 'webpack', '123'], ' ');
+//     // element.innerHTML = _.join(['hello', 'webpack'], ' ');
+//     element.innerHTML = print;
+//     // let img = document.createElement('img');
+//     // img.src = pic;
 
-    // element.appendChild(img);
-    // console.log(file, parse)
-    // console.log(sum(1, 2))
-    return element;
-}
-let element = component()
+//     // element.appendChild(img);
+//     // console.log(file, parse)
+//     // console.log(sum(1, 2))
+//     return element;
+// }
+// let element = component()
 
-let btn = document.createElement('button');
-btn.innerHTML = 'Click';
-btn.onclick = () => {
-    document.body.style.background = 'red'
-}
-document.body.append(element);
-document.body.append(btn);
+// let btn = document.createElement('button');
+// btn.innerHTML = 'Click';
+// btn.onclick = () => {
+//     document.body.style.background = 'red'
+// }
+// document.body.append(element);
+// document.body.append(btn);
 
 
 // if ('serviceWorker' in navigator) {
@@ -39,10 +40,13 @@ document.body.append(btn);
 //     });
 // }
 
-if (module.hot) {
-    module.hot.accept('./print.js', function () {
-        document.body.removeChild(elment)
-        element = component()
-        document.body.appendChild(element);
-    })
-}
+// if (module.hot) {
+//     module.hot.accept('./print.js', function () {
+//         document.body.removeChild(elment)
+//         element = component()
+//         document.body.appendChild(element);
+//     })
+// }
+
+
+const something = 1;

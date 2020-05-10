@@ -11,6 +11,7 @@ module.exports = {
     },
     module: {
         rules: [
+            { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
             {
                 test: resolve('src/globals.js'),
                 use: 'exports-loader?file,parse=helpers.parse' // 注意：中间不可以有空格 否则不识别
